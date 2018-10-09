@@ -12,7 +12,7 @@ Included algorithms (links go the source file):
 - [Quicksort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) ([info](https://en.wikipedia.org/wiki/Quicksort))
 - [SelectionSort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) ([info](https://en.wikipedia.org/wiki/Selection_sort))
 
-You can either test the speeds of *all of the algorithms at once*, or test a *single algorithm multiple times*.
+You can either test the speeds of **all of the algorithms at once**, or test a **single algorithm multiple times**.
 
 Feel free to copy and use the algorithms in your own projects! :-)
 
@@ -41,3 +41,9 @@ Now the sorting tests are run and the times are reported to the console.
 Here's how the program flow looks like:
 
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app02.png)
+
+## TODO
+
+- include in-depth descriptions of each step in the algorithms
+- refactoring
+- implement more sorting algorithms
