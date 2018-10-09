@@ -5,7 +5,7 @@ Included algorithms:
 - [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)
 - [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
 - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-- [JavaSort [internal]](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()])
+- [JavaSort (internal)](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()])
 - [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
 - [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 - [SelectionSort](https://en.wikipedia.org/wiki/Selection_sort)
