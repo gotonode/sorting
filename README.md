@@ -3,7 +3,7 @@
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
 Included algorithms:
-- [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
+- [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) ([source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java))
 - [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)
 - [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
 - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
