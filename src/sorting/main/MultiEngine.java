@@ -15,7 +15,9 @@ public class MultiEngine implements Engine {
     private final Generator generator;
 
     public MultiEngine() {
-        generator = new Generator(1337); // This one uses a seed.
+        // This one uses a seed so all of the algorithms will
+        // get the array to be sorted. It would be unfair otherwise.
+        generator = new Generator(1337);
     }
 
     @Override
@@ -52,6 +54,8 @@ public class MultiEngine implements Engine {
                 case none:
                     array = generator.generateArrayWithSoleValue(exponent, 0);
                     break;
+                default:
+                    throw new AssertionError(arrayFillMethod.name());
             }
 
             System.out.print("Running " + sorter.toString() + "..." + " ");

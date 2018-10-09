@@ -73,6 +73,8 @@ public class SingleEngine implements Engine {
                 case none:
                     array = generator.generateArrayWithSoleValue(exponent, 0);
                     break;
+                default:
+                    throw new AssertionError(arrayFillMethod.name());
             }
 
             if (Base.PRINT_ARRAY) {
