@@ -1,14 +1,14 @@
 # A collection of sorting algorithms implemented in Java
 
 Included algorithms:
-- Bubble Sort
-- Counting Sort
-- Heapsort
-- Insertion Sort
-- JavaSort (internal)
-- Merge Sort
-- Quicksort
-- SelectionSort
+- (Bubble Sort)[https://en.wikipedia.org/wiki/Bubble_sort]
+- (Counting Sort)[https://en.wikipedia.org/wiki/Counting_sort]
+- (Heapsort)[https://en.wikipedia.org/wiki/Heapsort]
+- (Insertion Sort)[https://en.wikipedia.org/wiki/Insertion_sort]
+- (JavaSort (internal))[https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort(int[])]
+- (Merge Sort)[https://en.wikipedia.org/wiki/Merge_sort]
+- (Quicksort)[https://en.wikipedia.org/wiki/Quicksort]
+- (SelectionSort)[https://en.wikipedia.org/wiki/Selection_sort]
 
 You can either test the speeds of all of the algorithms at once, or test a single algorithm multiple times.
 
