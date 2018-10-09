@@ -2,9 +2,9 @@
 
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
-Included algorithms:
-- [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) ([source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java))
-- [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)
+Included algorithms (links go the source file):
+- [Bubble Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java)) ([info](https://en.wikipedia.org/wiki/Bubble_sort)
+- [Counting Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) ([info](https://en.wikipedia.org/wiki/Counting_sort))
 - [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
 - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
 - [JavaSort (internal)](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()])
