@@ -1,5 +1,7 @@
 # A collection of sorting algorithms implemented in Java
 
+![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
+
 Included algorithms:
 - [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
 - [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)
@@ -33,3 +35,9 @@ Again, if you chose to test only a single algorithm, you need to specify how man
 Now the sorting tests are run and the times are reported to the console.
 
 Feel free to copy and use the algorithms in your own projects.
+
+## Screenshots
+
+Here's how the program flow looks like:
+
+![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app02.png)
