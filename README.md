@@ -12,7 +12,9 @@ Included algorithms (links go the source file):
 - [Quicksort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) ([info](https://en.wikipedia.org/wiki/Quicksort))
 - [SelectionSort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) ([info](https://en.wikipedia.org/wiki/Selection_sort))
 
-You can either test the speeds of all of the algorithms at once, or test a single algorithm multiple times.
+You can either test the speeds of *all of the algorithms at once*, or test a *single algorithm multiple times*.
+
+Feel free to copy and use the algorithms in your own projects! :-)
 
 ## How to use
 
@@ -33,8 +35,6 @@ Once you have indicated how you want your new array to be filled, you're almost 
 Again, if you chose to test only a single algorithm, you need to specify how many times you want to run the tests.
 
 Now the sorting tests are run and the times are reported to the console.
-
-Feel free to copy and use the algorithms in your own projects.
 
 ## Screenshots
 
