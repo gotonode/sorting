@@ -3,14 +3,14 @@
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
 Included algorithms (links go the source file):
-- [Bubble Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java)) ([info](https://en.wikipedia.org/wiki/Bubble_sort)
+- [Bubble Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java) ([info](https://en.wikipedia.org/wiki/Bubble_sort))
 - [Counting Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) ([info](https://en.wikipedia.org/wiki/Counting_sort))
-- [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
-- [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-- [JavaSort (internal)](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()])
-- [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
-- [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
-- [SelectionSort](https://en.wikipedia.org/wiki/Selection_sort)
+- [Heapsort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Heapsort.java) ([info](https://en.wikipedia.org/wiki/Heapsort))
+- [Insertion Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/InsertionSort.java) ([info](https://en.wikipedia.org/wiki/Insertion_sort))
+- [JavaSort (internal)](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/JavaSort.java) ([info](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()]))
+- [Merge Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/MergeSort.java) ([info](https://en.wikipedia.org/wiki/Merge_sort))
+- [Quicksort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) ([info](https://en.wikipedia.org/wiki/Quicksort))
+- [SelectionSort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) ([info](https://en.wikipedia.org/wiki/Selection_sort))
 
 You can either test the speeds of all of the algorithms at once, or test a single algorithm multiple times.
 
