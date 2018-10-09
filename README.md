@@ -2,7 +2,7 @@
 
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
-Included algorithms (links go the source file):
+Included algorithms (links point to the Java source files):
 - [Bubble Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java) ([info](https://en.wikipedia.org/wiki/Bubble_sort))
 - [Counting Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) ([info](https://en.wikipedia.org/wiki/Counting_sort))
 - [Heapsort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Heapsort.java) ([info](https://en.wikipedia.org/wiki/Heapsort))
