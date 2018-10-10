@@ -134,13 +134,13 @@ public class Base {
                         .get();
 
         if (type == 'A') {
-            // Testing all of the algorithms at once.
-            MultiEngine multiEngine = new MultiEngine();
-            multiEngine.run(exponent, arrayFillMethod, 0);
-
-            System.exit(0);
+            runAll(exponent, arrayFillMethod);
+        } else {
+            runSingle(args, userInterface, sortingAlgorithm, exponent, arrayFillMethod);
         }
+    }
 
+    private static void runSingle(String[] args, UI userInterface, Sorter sortingAlgorithm, int exponent, ArrayFillMethod arrayFillMethod) throws NumberFormatException {
         int iterations;
 
         if (args.length == 0) {
@@ -160,6 +160,12 @@ public class Base {
 
         // Calculate and print the results to the console.
         Tools.calculateAndPrintResults(times);
+    }
+
+    private static void runAll(int exponent, ArrayFillMethod arrayFillMethod) {
+        // Testing all of the algorithms at once.
+        MultiEngine multiEngine = new MultiEngine();
+        multiEngine.run(exponent, arrayFillMethod, 0);
     }
 
 }
