@@ -1,4 +1,6 @@
-# A collection of sorting algorithms implemented in Java
+# Sorting
+
+*A collection of sorting algorithms implemented in Java*
 
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
