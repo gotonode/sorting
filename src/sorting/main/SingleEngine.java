@@ -60,6 +60,8 @@ public class SingleEngine implements Engine {
                 }
             }
 
+            generator.resetRandom();
+
             switch (arrayFillMethod) {
                 case pseudorandom:
                     array = generator.generateRandomArray(exponent);

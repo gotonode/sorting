@@ -24,7 +24,11 @@ public class Generator {
      * Constructor without a seed.
      */
     public Generator() {
+
         this.seed = null; // Seed isn't used.
+
+        random = new Random();
+        secureRandom = new SecureRandom();
     }
 
     /**
@@ -33,10 +37,16 @@ public class Generator {
      * @param seed The long value used as the seed.
      */
     public Generator(long seed) {
+
         this.seed = seed;
+
+        random = new Random(this.seed);
+        secureRandom = new SecureRandom();
+        secureRandom.setSeed(this.seed);
     }
 
-    private void initRandom() {
+    public void resetRandom() {
+
         if (seed == null) {
             random = new Random();
             secureRandom = new SecureRandom();
@@ -54,8 +64,6 @@ public class Generator {
      * @return The newly generated pseudorandom array.
      */
     public int[] generateRandomArray(int exponent) {
-
-        initRandom();
 
         int n = (int) Math.pow(10, exponent);
 
@@ -77,8 +85,6 @@ public class Generator {
      * @return The newly generated, more secure pseudorandom array.
      */
     public int[] generateSecureRandomArray(int exponent) {
-
-        initRandom();
 
         int n = (int) Math.pow(10, exponent);
 

@@ -41,6 +41,8 @@ public class MultiEngine implements Engine {
 
             int[] array = new int[(int) Math.pow(10, exponent)];
 
+            generator.resetRandom();
+
             switch (arrayFillMethod) {
                 case pseudorandom:
                     array = generator.generateRandomArray(exponent);
