@@ -159,41 +159,7 @@ public class Base {
         List<Long> times = engine.getTimes();
 
         // Calculate and print the results to the console.
-        calculateAndPrintResults(times);
-    }
-
-    /**
-     * Calculates the results and prints them to the console.
-     *
-     * This will print the average, minimum and maximum times the algorithm ran.
-     */
-    private static void calculateAndPrintResults(List<Long> times) {
-
-        double sum = 0;
-
-        double fastest = times.get(0);
-        double slowest = times.get(0);
-
-        for (long l : times) {
-            if (l > slowest) {
-                slowest = l;
-            }
-            if (l < fastest) {
-                fastest = l;
-            }
-            sum += l;
-        }
-
-        double average = sum / times.size();
-
-        if (Base.VERBOSE_OUTPUT) {
-            System.out.println();
-        }
-
-        fastest = (long) fastest;
-        slowest = (long) slowest;
-
-        System.out.println("Run complete. Average: " + average + " ms, fastest: " + fastest + " ms, slowest: " + slowest + " ms.");
+        Tools.calculateAndPrintResults(times);
     }
 
 }

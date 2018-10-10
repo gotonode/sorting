@@ -1,9 +1,47 @@
 package sorting.main;
 
+import java.util.List;
+
 /**
- * A class that houses many static functions used by the Engine-classes.
+ * A class that houses many useful static functions.
  */
 public class Tools {
+
+    /**
+     * Calculates the results and prints them to the console.
+     *
+     * This will print the average, minimum and maximum times the algorithm ran.
+     *
+     * @param times In milliseconds, how long each test took.
+     */
+    public static void calculateAndPrintResults(List<Long> times) {
+
+        double sum = 0;
+
+        double fastest = times.get(0);
+        double slowest = times.get(0);
+
+        for (long l : times) {
+            if (l > slowest) {
+                slowest = l;
+            }
+            if (l < fastest) {
+                fastest = l;
+            }
+            sum += l;
+        }
+
+        double average = sum / times.size();
+
+        if (Base.VERBOSE_OUTPUT) {
+            System.out.println();
+        }
+
+        fastest = (long) fastest;
+        slowest = (long) slowest;
+
+        System.out.println("Run complete. Average: " + average + " ms, fastest: " + fastest + " ms, slowest: " + slowest + " ms.");
+    }
 
     /**
      * Prints the array's values into the console.
