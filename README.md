@@ -10,7 +10,7 @@ Included algorithms (links point to the Java source files):
 - [JavaSort (internal)](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/JavaSort.java) ([info](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()]))
 - [Merge Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/MergeSort.java) ([info](https://en.wikipedia.org/wiki/Merge_sort))
 - [Quicksort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) ([info](https://en.wikipedia.org/wiki/Quicksort))
-- [SelectionSort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) ([info](https://en.wikipedia.org/wiki/Selection_sort))
+- [Selection Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) ([info](https://en.wikipedia.org/wiki/Selection_sort))
 
 You can either test the speeds of **all of the algorithms at once**, or test a **single algorithm multiple times**.
 
