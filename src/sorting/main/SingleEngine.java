@@ -32,7 +32,7 @@ public class SingleEngine implements Engine {
         this.sortAlgorithm = sortAlgorithm;
 
         // You can optionally use a seed here. Just pass it as a parameter.
-        generator = new Generator();
+        generator = new Generator(1337);
     }
 
     @Override
