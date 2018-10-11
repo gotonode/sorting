@@ -6,16 +6,16 @@
 
 ## Included algorithms
 
-| algorithm | source | info | time complexity |
-| :-------  | :----- | :--- | :-------------- |
-| Bubble Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java) | [info](https://en.wikipedia.org/wiki/Bubble_sort) | O(n^2) |
-| Counting Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) | [info](https://en.wikipedia.org/wiki/Counting_sort) | O(n) |
-| Heapsort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Heapsort.java) | [info](https://en.wikipedia.org/wiki/Heapsort) | O(n log n) |
-| Insertion Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/InsertionSort.java) | [info](https://en.wikipedia.org/wiki/Insertion_sort) | O(n^2) |
-| JavaSort (internal) |  [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/JavaSort.java) | [info](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()]) | O(n log n) |
-| Merge Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/MergeSort.java) | [info](https://en.wikipedia.org/wiki/Merge_sort) | O(n log n) |
-| Quicksort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) | [info](https://en.wikipedia.org/wiki/Quicksort) | O(n log n) |
-| Selection Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) | [info](https://en.wikipedia.org/wiki/Selection_sort) | O(n^2) |
+| algorithm | source | info | type | class | time complexity | space complexity |
+| :-------  | :----- | :--- | :--- | :---- | :-------------- | :--------------- |
+| Bubble Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java) | [info](https://en.wikipedia.org/wiki/Bubble_sort) | comparison | exchange | O(n^2) | O(1) |
+| Counting Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) | [info](https://en.wikipedia.org/wiki/Counting_sort) | non-comparison | distribution | O(n + k) | O(n + k) |
+| Heapsort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Heapsort.java) | [info](https://en.wikipedia.org/wiki/Heapsort) | comparison | selection | O(n log n) | O(1) |
+| Insertion Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/InsertionSort.java) | [info](https://en.wikipedia.org/wiki/Insertion_sort) | comparison | insertion | O(n^2) | O(1) |
+| JavaSort (internal) |  [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/JavaSort.java) | [info](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()]) | comparison | merge or exchange | O(n log n) | O(n) |
+| Merge Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/MergeSort.java) | [info](https://en.wikipedia.org/wiki/Merge_sort) | comparison | merge | O(n log n) | O(n) |
+| Quicksort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) | [info](https://en.wikipedia.org/wiki/Quicksort) | comparison | exchange | O(n log n) | O(n) |
+| Selection Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) | [info](https://en.wikipedia.org/wiki/Selection_sort) | comparison | selection | O(n^2) | O(1) |
 
 Feel free to copy and use the algorithms in your own projects! :-)
 
