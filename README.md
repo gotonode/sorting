@@ -4,21 +4,24 @@
 
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
-Included algorithms (links point to the Java source files):
-- [Bubble Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java) ([info](https://en.wikipedia.org/wiki/Bubble_sort))
-- [Counting Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) ([info](https://en.wikipedia.org/wiki/Counting_sort))
-- [Heapsort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Heapsort.java) ([info](https://en.wikipedia.org/wiki/Heapsort))
-- [Insertion Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/InsertionSort.java) ([info](https://en.wikipedia.org/wiki/Insertion_sort))
-- [JavaSort (internal)](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/JavaSort.java) ([info](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()]))
-- [Merge Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/MergeSort.java) ([info](https://en.wikipedia.org/wiki/Merge_sort))
-- [Quicksort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) ([info](https://en.wikipedia.org/wiki/Quicksort))
-- [Selection Sort](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) ([info](https://en.wikipedia.org/wiki/Selection_sort))
+## Included algorithms
 
-You can either test the speeds of **all of the algorithms at once**, or test a **single algorithm multiple times**.
+| algorithm | source | info | time complexity |
+| :-------  | :----- | :--- | :-------------- |
+| Bubble Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/BubbleSort.java) | [info](https://en.wikipedia.org/wiki/Bubble_sort) | O(n^2) |
+| Counting Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/CountingSort.java) | [info](https://en.wikipedia.org/wiki/Counting_sort) | O(n) |
+| Heapsort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Heapsort.java) | [info](https://en.wikipedia.org/wiki/Heapsort) | O(n log n) |
+| Insertion Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/InsertionSort.java) | [info](https://en.wikipedia.org/wiki/Insertion_sort) | O(n^2) |
+| JavaSort (internal) |  [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/JavaSort.java) | [info](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort[int()]) | O(n log n) |
+| Merge Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/MergeSort.java) | [info](https://en.wikipedia.org/wiki/Merge_sort) | O(n log n) |
+| Quicksort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/Quicksort.java) | [info](https://en.wikipedia.org/wiki/Quicksort) | O(n log n) |
+| Selection Sort | [source](https://github.com/gotonode/sorting/blob/master/src/sorting/algorithms/SelectionSort.java) | [info](https://en.wikipedia.org/wiki/Selection_sort) | O(n^2) |
 
 Feel free to copy and use the algorithms in your own projects! :-)
 
 ## How to use
+
+You can either test the speeds of **all of the algorithms at once**, or test a **single algorithm multiple times**.
 
 First, you need to choose if you want to test a single algorithm (1 to n times) or all of the algorithms in a row once.
 
