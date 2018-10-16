@@ -49,6 +49,6 @@ Here's how the program flow looks like:
 
 ## TODO
 
-- include in-depth descriptions of each step in the algorithms
-- refactoring
-- implement more sorting algorithms
+- [ ] include in-depth descriptions of each step in the algorithms
+- [ ] refactoring
+- [ ] implement more sorting algorithms
