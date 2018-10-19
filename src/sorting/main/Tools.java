@@ -33,7 +33,7 @@ public class Tools {
 
         double average = sum / times.size();
 
-        if (Base.VERBOSE_OUTPUT) {
+        if (Main.VERBOSE_OUTPUT) {
             System.out.println();
         }
 
@@ -91,7 +91,7 @@ public class Tools {
         int n = array.length;
         for (int i = 0; i < n - 1; i++) {
             if (array[i] > array[i + 1]) {
-                if (Base.ERROR_ON_ARRAY_INVERSIONS) {
+                if (Main.ERROR_ON_ARRAY_INVERSIONS) {
                     throw new RuntimeException("Array had inversions. Aborting operation.");
                 }
                 return false;

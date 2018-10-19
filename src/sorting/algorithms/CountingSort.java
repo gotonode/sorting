@@ -27,7 +27,7 @@ public class CountingSort implements Sorter {
 
     @Override
     public String explanation() {
-        return "This is an extremely fast sorting algorithm, but arrays can't contain integers that have very high values.";
+        return "This is an extremely fast sorting algorithm, but arrays can only contain integers that don't have very high values.";
     }
 
     /**
@@ -47,12 +47,15 @@ public class CountingSort implements Sorter {
             counter[array[i]] += 1;
         }
 
-        int i = 0;
+        int index = 0;
 
-        for (int x = 0; x < array.length; x++) {
-            for (int j = 0; j < counter[x]; j++) {
-                array[i] = x;
-                i++;
+        for (int i = 0; i < array.length; i++) {
+
+            int nextValue = counter[i];
+
+            for (int j = 0; j < nextValue; j++) {
+                array[index] = i;
+                index++;
             }
         }
 

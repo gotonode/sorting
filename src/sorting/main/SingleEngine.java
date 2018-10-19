@@ -31,7 +31,6 @@ public class SingleEngine implements Engine {
     public SingleEngine(Sorter sortAlgorithm) {
         this.sortAlgorithm = sortAlgorithm;
 
-        // You can optionally use a seed here. Just pass it as a parameter.
         generator = new Generator(1337);
     }
 
@@ -55,7 +54,7 @@ public class SingleEngine implements Engine {
         for (int i = 0; i < iterations; i++) {
 
             if (iterations > 1) {
-                if (Base.VERBOSE_OUTPUT) {
+                if (Main.VERBOSE_OUTPUT) {
                     System.out.print("Iteration " + (i + 1) + " of " + iterations + "..." + " ");
                 }
             }
@@ -79,8 +78,8 @@ public class SingleEngine implements Engine {
                     throw new AssertionError(arrayFillMethod.name());
             }
 
-            if (Base.PRINT_ARRAY) {
-                System.out.println("Printing array to be sorted:");
+            if (Main.PRINT_ARRAY) {
+                System.out.println("Printing array BEFORE sort operation:");
                 Tools.printArray(array);
             }
 
@@ -94,16 +93,16 @@ public class SingleEngine implements Engine {
 
             times.add(difference);
 
-            if (Base.VERBOSE_OUTPUT) {
+            if (Main.VERBOSE_OUTPUT) {
                 System.out.print("Completed in " + difference + " ms." + " ");
             }
 
-            if (Base.VERIFY_SORT_SUCCESS) {
+            if (Main.VERIFY_SORT_SUCCESS) {
 
                 boolean arrayIsOkay = Tools.verifySort(array);
 
                 if (arrayIsOkay) {
-                    if (Base.VERBOSE_OUTPUT) {
+                    if (Main.VERBOSE_OUTPUT) {
                         System.out.print("Verification OK.\n");
                     }
                 } else {
@@ -112,8 +111,8 @@ public class SingleEngine implements Engine {
 
             }
 
-            if (Base.PRINT_ARRAY) {
-                System.out.println("Printing SORTED array:");
+            if (Main.PRINT_ARRAY) {
+                System.out.println("Printing array AFTER sort operation:");
                 Tools.printArray(array);
             }
         }

@@ -72,7 +72,7 @@ public class MultiEngine implements Engine {
 
             String inversions;
 
-            if (Base.VERIFY_SORT_SUCCESS) {
+            if (Main.VERIFY_SORT_SUCCESS) {
 
                 boolean arrayIsOkay = Tools.verifySort(array);
 
