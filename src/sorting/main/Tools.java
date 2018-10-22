@@ -37,10 +37,7 @@ public class Tools {
             System.out.println();
         }
 
-        fastest = (long) fastest;
-        slowest = (long) slowest;
-
-        System.out.println("Run complete. Average: " + average + " ms, fastest: " + fastest + " ms, slowest: " + slowest + " ms.");
+        System.out.println("Run complete. Average: " + average + " ms, fastest: " + (long) fastest + " ms, slowest: " + (long) slowest + " ms.");
     }
 
     /**
