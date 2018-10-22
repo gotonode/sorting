@@ -51,102 +51,19 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("[BCHIJMQ]{1} [1-9]{1} [PADN]{1} \\d+");
-
-        // TODO: This can be improved.
-        String s = Arrays.asList(args).toString().replace(",", "").replace("[", "").replace("]", "");
-
-        Matcher matcher = pattern.matcher(s);
-
-        if (args.length > 0) {
-            System.out.println("Launched with arguments: " + Arrays.toString(args));
-
-            if (matcher.find() == false) {
-                System.out.println("Bad arguments. Please see the accompanied 'README.md' file.");
-                System.exit(1);
-            }
-        }
-
         UI userInterface = new UI(new Scanner(System.in));
 
-        char type = userInterface.askForTestType();
-
-        Sorter sortingAlgorithm = null;
-
-        if (type == 'S') {
-
-            char algorithm;
-
-            if (args.length == 0) {
-
-                List<Sorter> sorters = new ArrayList<>(SortingAlgorithm.values().length);
-
-                for (SortingAlgorithm sa : SortingAlgorithm.values()) {
-                    sorters.add(sa.getSorter());
-                }
-
-                algorithm = userInterface.askForAlgorithm(sorters);
-
-            } else {
-                algorithm = args[0].toUpperCase().charAt(0); // Will fail on bad input.
-
-            }
-
-            // This line of code is horrible! Please do not look here or read this line.
-            sortingAlgorithm
-                    = Arrays.asList(SortingAlgorithm.values())
-                            .stream()
-                            .filter(a -> a.getSorter().code().equals(algorithm))
-                            .findFirst()
-                            .get()
-                            .getSorter();
-
-            if (args.length == 0) {
-                System.out.println("Okay, you chose " + sortingAlgorithm.toString() + "." + " " + sortingAlgorithm.explanation());
-            }
-        }
-
-        int exponent;
-
-        if (args.length == 0) {
-            exponent = userInterface.askForExponent();
+        if (args.length > 0) {
+            launchWithArguments(userInterface, args);
         } else {
-            exponent = Integer.valueOf(args[1]);
-        }
-
-        if (args.length == 0) {
-            System.out.println("Okay, you'll get an array that has " + (int) Math.pow(10, exponent) + " values.");
-        }
-
-        char fillMethod;
-
-        if (args.length == 0) {
-            fillMethod = userInterface.askForArrayFillMethod();
-        } else {
-            fillMethod = args[2].toUpperCase().charAt(0);
-        }
-
-        ArrayFillMethod arrayFillMethod
-                = Arrays.asList(ArrayFillMethod.values())
-                        .stream()
-                        .filter(a -> a.getType() == fillMethod)
-                        .findFirst()
-                        .get();
-
-        if (type == 'A') {
-            runAll(exponent, arrayFillMethod);
-        } else {
-            runSingle(args, userInterface, sortingAlgorithm, exponent, arrayFillMethod);
+            launchWithoutArguments(userInterface);
         }
     }
 
-    private static void runSingle(String[] args, UI userInterface, Sorter sortingAlgorithm, int exponent, ArrayFillMethod arrayFillMethod) throws NumberFormatException {
-        int iterations;
+    private static void runSingle(Integer iterations, UI userInterface, Sorter sortingAlgorithm, int exponent, ArrayFillMethod arrayFillMethod) throws NumberFormatException {
 
-        if (args.length == 0) {
+        if (iterations == null) {
             iterations = userInterface.askForIterationCount();
-        } else {
-            iterations = Integer.valueOf(args[3]);
         }
 
         // Create a new Engine with the given sorting algorithm.
@@ -166,6 +83,107 @@ public class Main {
         // Testing all of the algorithms at once.
         MultiEngine multiEngine = new MultiEngine();
         multiEngine.run(exponent, arrayFillMethod, 0);
+    }
+
+    private static void launchWithArguments(UI userInterface, String[] args) {
+        Pattern pattern = Pattern.compile("[BCHIJMQ]{1} [1-9]{1} [PADN]{1} \\d+");
+
+        // TODO: This can be improved.
+        String s = Arrays.asList(args).toString().replace(",", "").replace("[", "").replace("]", "");
+
+        Matcher matcher = pattern.matcher(s);
+
+        System.out.println("Launched with arguments: " + Arrays.toString(args));
+
+        if (matcher.find() == false) {
+            System.out.println("Bad arguments. Please see the accompanied 'README.md' file.");
+            System.exit(1);
+        }
+
+        char type = userInterface.askForTestType();
+
+        Sorter sortingAlgorithm = null;
+
+        if (type == 'S') {
+
+            char algorithm = args[0].toUpperCase().charAt(0); // Will fail on bad input.
+
+            // This line of code is horrible! Please do not look here or read this line.
+            sortingAlgorithm
+                    = Arrays.asList(SortingAlgorithm.values())
+                            .stream()
+                            .filter(a -> a.getSorter().code().equals(algorithm))
+                            .findFirst()
+                            .get()
+                            .getSorter();
+        }
+
+        int exponent = Integer.valueOf(args[1]);
+
+        char fillMethod = args[2].toUpperCase().charAt(0);
+
+        ArrayFillMethod arrayFillMethod
+                = Arrays.asList(ArrayFillMethod.values())
+                        .stream()
+                        .filter(a -> a.getType() == fillMethod)
+                        .findFirst()
+                        .get();
+
+        if (type == 'A') {
+            runAll(exponent, arrayFillMethod);
+        } else {
+            runSingle(1, userInterface, sortingAlgorithm, exponent, arrayFillMethod);
+        }
+    }
+
+    private static void launchWithoutArguments(UI userInterface) {
+
+        char type = userInterface.askForTestType();
+
+        Sorter sortingAlgorithm = null;
+
+        if (type == 'S') {
+
+            char algorithm;
+
+            List<Sorter> sorters = new ArrayList<>(SortingAlgorithm.values().length);
+
+            for (SortingAlgorithm sa : SortingAlgorithm.values()) {
+                sorters.add(sa.getSorter());
+            }
+
+            algorithm = userInterface.askForAlgorithm(sorters);
+
+            // This line of code is horrible! Please do not look here or read this line.
+            sortingAlgorithm
+                    = Arrays.asList(SortingAlgorithm.values())
+                            .stream()
+                            .filter(a -> a.getSorter().code().equals(algorithm))
+                            .findFirst()
+                            .get()
+                            .getSorter();
+
+            System.out.println("Okay, you chose " + sortingAlgorithm.toString() + "." + " " + sortingAlgorithm.explanation());
+        }
+
+        int exponent = userInterface.askForExponent();
+
+        System.out.println("Okay, you'll get an array that has " + (int) Math.pow(10, exponent) + " values.");
+
+        char fillMethod = userInterface.askForArrayFillMethod();
+
+        ArrayFillMethod arrayFillMethod
+                = Arrays.asList(ArrayFillMethod.values())
+                        .stream()
+                        .filter(a -> a.getType() == fillMethod)
+                        .findFirst()
+                        .get();
+
+        if (type == 'A') {
+            runAll(exponent, arrayFillMethod);
+        } else {
+            runSingle(null, userInterface, sortingAlgorithm, exponent, arrayFillMethod);
+        }
     }
 
 }
