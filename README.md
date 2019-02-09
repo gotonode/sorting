@@ -2,6 +2,10 @@
 
 *A collection of sorting algorithms implemented in Java*
 
+| Travis CI | Codacy | Codecov |
+| :-: | :-: | :-: |
+|[![Build Status](https://travis-ci.org/gotonode/sorting.svg?branch=master)](https://travis-ci.org/gotonode/sorting) | [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1e8352321c204b709c71a22070a40f57)](https://www.codacy.com/app/gotonode/sorting?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gotonode/sorting&amp;utm_campaign=Badge_Grade) | [![codecov](https://codecov.io/gh/gotonode/sorting/branch/master/graph/badge.svg)](https://codecov.io/gh/gotonode/sorting) |
+
 ![App results](https://github.com/gotonode/sorting/blob/master/docs/images/app01.png)
 
 ## Included algorithms
