@@ -1,7 +1,6 @@
 # Project
-/nbproject
-/build.xml
-/manifest.mf
+.gradle
+.idea
 
 # Compiled class file
 *.class
