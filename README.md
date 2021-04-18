@@ -23,6 +23,8 @@
 
 Feel free to copy and use the algorithms in your own projects! :-)
 
+I've made special effort to document my code well.
+
 ## How to use
 
 You can either test the speeds of **all of the algorithms at once**, or test a **single algorithm multiple times**.
